@@ -2,20 +2,21 @@
   "name": "@miraclesoft/eslint-formatter-html",
   "version": "0.1.0",
   "description": "Miracle's HTML Formatter for eslint results",
-  "main": "app.js",
+  "main": "src/app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miracleapps/eslint-formatter-html.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "eslint",
     "eslint-formatter"
   ],
   "author": "Chanakya Lokam",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WiserSolutions/eslint-formatter-idea/issues"
+  },
+  "homepage": "https://github.com/WiserSolutions/eslint-formatter-idea#readme",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "handlebars": "^4.7.6"
