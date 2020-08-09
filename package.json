@@ -1,6 +1,6 @@
 {
   "name": "@miraclesoft/eslint-formatter-html",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Miracle's HTML Formatter for ESLint results",
   "main": "src/app.js",
   "repository": {
