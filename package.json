@@ -1,6 +1,6 @@
 {
   "name": "@miraclesoft/eslint-formatter-html",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Miracle's HTML Formatter for eslint results",
   "main": "app.js",
   "scripts": {

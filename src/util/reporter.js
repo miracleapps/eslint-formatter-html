@@ -16,13 +16,13 @@ const generateReport = (formattedData) => {
   const report = template(formattedData);
 
   // Create /reports directory to store the results
-  if (!fs.existsSync(path.join(__dirname, '../../../../reports'))) {
-    fs.mkdirSync(path.join(__dirname, '../../../../reports'));
+  if (!fs.existsSync(path.join(__dirname, '../../../../../reports'))) {
+    fs.mkdirSync(path.join(__dirname, '../../../../../reports'));
   }
 
   // Store report into a .html file
   fs.writeFileSync(
-    path.join(__dirname, '../../../../reports/lint-report.html'),
+    path.join(__dirname, '../../../../../reports/lint-report.html'),
     report
   );
 
