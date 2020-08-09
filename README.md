@@ -20,6 +20,10 @@ Then use with eslint from the command line,(example shown running eslint locally
 
 ```sh
 ./node_modules/.bin/eslint -f @miraclesoft/eslint-formatter-html [files-to-lint]
+
+Alternatively you can use with the following command as well,
+
+./node_modules/.bin/eslint -f @miraclesoft/html [files-to-lint]
 ```
 
 When run, the formatter will output a HTML report in **/reports/lint-report.html**
