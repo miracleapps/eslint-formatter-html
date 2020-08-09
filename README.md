@@ -24,7 +24,7 @@ Then use with eslint from the command line,(example shown running eslint locally
 
 When run, the formatter will output a HTML report in **/reports/lint-report.html**
 
-Here is a preview for the [HTML Report](/@miraclesoft/eslint-formatter-html/assets/lint-report.html)
+Here is a preview for the [HTML Report](http://htmlpreview.github.io/?https://github.com/miracleapps/eslint-formatter-html/blob/master/assets/lint-report.html)
 
 ## Contributors
 

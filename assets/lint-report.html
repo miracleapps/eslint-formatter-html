@@ -306,6 +306,10 @@
             cursor: pointer;
         }
 
+        input[type="radio"]:focus+.btn-radio {
+            /* outline: 2px solid #00aae7; */
+        }
+
         input[type="radio"]:checked+.btn-radio {
             background: #0d416b;
             color: #fff;
@@ -472,9 +476,9 @@
 </head>
 
 <body>
-    <div id="overview" class="bg-success roww">
+    <div id="overview" class="bg-error roww">
         <h1 class='column-6'>ESLint Report -
-            <small class="text-success">Success</small>
+            <small class="text-error">Error</small>
         </h1>
         <div class='column-6'>
             <img src="./miracle-logo.svg" alt="" style="height: 60px; float: right">
@@ -484,8 +488,27 @@
     <div class="container">
         <div id="summary">
             <h2 class="page-header">Summary</h2>
-            <div>0 problems (0 errors, 0 warnings)</div>
+            <div>1 problems (1 errors, 0 warnings)</div>
 
+            <div class="row">
+                <div class="column">
+                    <h3 class="text-error">Top Errors</h3>
+                    <table class="summary-table" id='t01'>
+                        <thead>
+                            <tr>
+                                <th>rule</th>
+                                <th>count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href=http://eslint.org/docs/rules/no-console target="_blank">no-console</a></td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
         </div>
         <div id="details">
@@ -507,7 +530,7 @@
             </fieldset>
             <table id="fileOverview">
                 <tbody>
-                    <tr class="lint-result bg-success" tabindex="0" data-group="f-0">
+                    <tr class="lint-result bg-error" tabindex="0" data-group="f-0">
                         <th class="icon-box" colspan="1">
                             <span class="caret"></span>
                         </th>
@@ -515,7 +538,7 @@
                             /Users/miracle/Desktop/TechWorkspace/mapps-best-practices/nodejs/test-linter/app.js
                         </th>
                         <th class="result-summary">
-                            0 problems
+                            1 problem (1 error, 0 warnings)
                         </th>
                     </tr>
                     <tr class="f-0 hidden">
@@ -548,6 +571,14 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <tr class="issue">
+                                                    <td><strong class="text-error">Error<strong></td>
+                                                    <td>
+                                                        Row 1, Column 1: <b>Unexpected console statement.</b>
+                                                        <a href="http://eslint.org/docs/rules/no-console"
+                                                            target="_blank">no-console</a>
+                                                    </td>
+                                                </tr>
 
                                             </tbody>
                                         </table>
@@ -562,6 +593,27 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <tr class="issue">
+                                                <td><strong class="text-error"
+                                                        style="text-transform: capitalize;">error<strong></td>
+                                                <td>
+                                                    Row 1, Column 1: <b>
+                                                        Unexpected console statement.
+                                                    </b>
+                                                    <a href="https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/no-controller.md"
+                                                        target="_blank">no-console</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hit bg-error">
+                                                <td class="line">1</td>
+                                                <td class="source">
+                                                    <code>console.log(&#x27;This is a console statement&#x27;);</code>
+                                                </td>
+                                            </tr>
+                                            <tr class="hit bg-success">
+                                                <td class="line">2</td>
+                                                <td class="source"><code></code></td>
+                                            </tr>
                                         </tbody>
                                     </table>
 
